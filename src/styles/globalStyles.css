@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Poppins:wght@400;500&display=swap');
+
+
+:root{
+    --color-primary: #e5e5e6;
+    --color-secondy: #fefeff;
+}
+
+:root {
+    --font-primary: 'Inter', sans-serif;
+    --font-secondary: 'Poppins', sans-serif;
+  }
+
+
+  body {
+   
+    background: url('../assets/fundo3.jpg') ;
+    
+  }
+  
+  

@@ -1,0 +1,23 @@
+.div-lorem{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 1000px;
+    margin: auto;
+    
+}
+
+.title-lorem{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding: 30px;
+    
+}
+
+.div-plorem{
+    width: 550px;
+    text-align: center;
+    margin: auto;
+}
+

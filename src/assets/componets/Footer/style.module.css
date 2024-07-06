@@ -1,0 +1,30 @@
+.footer-container{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 60px;
+    border-top: 1px solid var(--color-primary);
+    border-bottom: 1px solid var(--color-primary);
+    
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+
+}
+
+.section-container{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+
+.section-container div a img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.section-container div a img:hover {
+    transform: scale(1.2);
+    filter: brightness(0) invert(1);
+}

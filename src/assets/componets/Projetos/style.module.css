@@ -1,0 +1,30 @@
+.projects-container {
+  margin: 0 auto;
+  max-width: 800px;
+  justify-content: center;
+  text-align: center;
+  padding: 50px;
+}
+
+.projects-list {
+  text-align: center;
+    width: 550px;
+    margin: auto;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.page-link {
+  margin: 0 5px;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  font-size: 24px; 
+  color: var(--color-primary);
+}
+
