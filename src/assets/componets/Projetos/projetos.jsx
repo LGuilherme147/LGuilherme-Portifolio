@@ -7,17 +7,17 @@ const Projects = () => {
 
   const nextPage = () => {
     if (currentPage < projects.length - 1) {
-      setCurrentPage((prevPage) => prevPage + 1);
+      setCurrentPage(prevPage => prevPage + 1);
     }
   };
 
   const prevPage = () => {
     if (currentPage > 0) {
-      setCurrentPage((prevPage) => prevPage - 1);
+      setCurrentPage(prevPage => prevPage - 1);
     }
   };
 
-  const handleKeyDown = (event) => {
+  const handleKeyDown = event => {
     if (event.key === 'ArrowRight') {
       nextPage();
     } else if (event.key === 'ArrowLeft') {
@@ -34,25 +34,30 @@ const Projects = () => {
 
   return (
     <div className={style['projects-container']}>
-      <ul className={style['projects-list']}>
-        <h2 className="title1">Meus Projetos</h2>
-        <li key={currentPage} className="project-item">
-          <h3 className="title2">{projects[currentPage].name}</h3>
-          <p className="paragrafTwo">{projects[currentPage].description}</p>
-          <a href={projects[currentPage].url} target="_blank" rel="noopener noreferrer" className="paragraf">
+      <h2 className='title1'>Meus Projetos</h2>
+      <div className={style['projects-list']}>
+        <div className={style['project-item']}>
+          <h3 className= 'title2'>{projects[currentPage].name}</h3>
+          <p className= 'paragrafTwo'>{projects[currentPage].description}</p>
+          <a
+            href={projects[currentPage].url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className='paragraf'
+          >
             Veja o Projeto
           </a>
-        </li>
-      </ul>
+        </div>
+      </div>
       <div className={style['pagination']}>
         {currentPage > 0 && (
           <button onClick={prevPage} className={style['page-link']}>
-            &larr;
+            &larr; 
           </button>
         )}
         {currentPage < projects.length - 1 && (
           <button onClick={nextPage} className={style['page-link']}>
-            &rarr; 
+             &rarr;
           </button>
         )}
       </div>
