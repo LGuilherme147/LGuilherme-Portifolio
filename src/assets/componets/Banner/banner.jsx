@@ -1,6 +1,5 @@
 import  fotoMinha1 from "../../../assets/user.png"
-import  fotoMinha2 from "../../../assets/user2.png"
-import  fotoMinha3 from "../../../assets/user3.png"
+
 import  style from "./style.module.css"
 
 const Banner = () => {

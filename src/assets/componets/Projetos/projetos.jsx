@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { projects } from '../../data/projects';
 import style from "./style.module.css";
 
@@ -16,6 +16,21 @@ const Projects = () => {
       setCurrentPage((prevPage) => prevPage - 1);
     }
   };
+
+  const handleKeyDown = (event) => {
+    if (event.key === 'ArrowRight') {
+      nextPage();
+    } else if (event.key === 'ArrowLeft') {
+      prevPage();
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener('keydown', handleKeyDown);
+    return () => {
+      window.removeEventListener('keydown', handleKeyDown);
+    };
+  }, [currentPage]);
 
   return (
     <div className={style['projects-container']}>

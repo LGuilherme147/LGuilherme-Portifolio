@@ -11,7 +11,7 @@
     font-family: var(--font-primary);
     font-size: 25px;
     font-weight: 500;
-    line-height: 15.50px;
+    line-height: 15.50px, ;
 }
 
 .title3{
@@ -19,7 +19,7 @@
     font-family: var(--font-primary);
     font-size: 27x;
     font-weight: 500;
-    line-height: 18.50px;
+    line-height: 18.50px, ;
 }
 
 .paragraf{

@@ -9,7 +9,7 @@ const Skills = () =>{
     {skills.map((category, index) => (
       
       <div key={index} className={style['category-container']}>
-        <h2 className="title1">Competências</h2>
+        <h2 className="title2">Competências</h2>
         <h3 className="title2">{category.category}</h3>
         <ul className={style['skills-list']}>
           {category.list.map((skill, idx) => (
