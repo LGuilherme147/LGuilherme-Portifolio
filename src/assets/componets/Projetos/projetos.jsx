@@ -39,6 +39,7 @@ const Projects = () => {
         <div className={style['project-item']}>
           <h3 className= 'title2'>{projects[currentPage].name}</h3>
           <p className= 'paragrafTwo'>{projects[currentPage].description}</p>
+          <div className={style['gapgap']}>
           <a
             href={projects[currentPage].url}
             target="_blank"
@@ -47,6 +48,15 @@ const Projects = () => {
           >
             Veja o Projeto
           </a>
+          <a
+              href={projects[currentPage].repo}
+              target="_blank"
+              rel="noopener noreferrer"
+              className='paragraf'
+            >
+              Repositório GitHub
+            </a>
+            </div>
         </div>
       </div>
       <div className={style['pagination']}>
