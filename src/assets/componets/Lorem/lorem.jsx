@@ -4,7 +4,7 @@ import  style from "./style.module.css"
     return(
         <div className={style['div-lorem']}>
           <div className={style['title-lorem']}>
-          <h2 className="title1">Sobre Mim</h2>
+          <h2 className="title1">Sobre mim</h2>
           </div>
           <div className={style['div-plorem']}>
             <p className="paragrafTwo">
